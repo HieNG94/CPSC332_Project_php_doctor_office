@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background-image: url("img/bg.jpg");
+}
+
+/* Header/Blog Title */
+
+.header {
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+  background: rgb(120, 109, 150);
+}
+
+/* Create two unequal columns that floats next to each other */
+
+/* Left column */
+
+.leftcolumn {
+  float: left;
+  width: 15%;
+}
+
+/* Right column */
+
+.rightcolumn {
+  float: left;
+  width: 85%;
+  padding-left: 20px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+
+/* Add a card effect for articles */
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: rgb(141, 138, 138);
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+td {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  text-decoration: underline;
+  color: red;
+}
+
+form input{
+  width: 500px;
+  height: 40px;
+  font-size: 20px;
+  padding-left: 5px;
+}
